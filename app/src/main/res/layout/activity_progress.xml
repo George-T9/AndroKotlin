@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".progressBar.ProgressActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:text="Circular Progress Bar :"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:text="Horizontal Progress Bar :"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbarStyle="outsideOverlay"
+        />
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:text="Custom Horizontal Progress Bar :"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/progress_states"
+        android:minHeight="150dp"
+        android:minWidth="150dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/primary_progress_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/secondary_progress_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+</LinearLayout>
